@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexa NFT</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+</head>
+
+<body>
+    <!-- header section start -->
+    <header class="container-fluid ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <nav class="navbar navbar-expand-lg navbar-dark  py-3">
+
+                        <!-- Logo -->
+                        <a class="navbar-brand fw-bold " href="#">
+                            <span style="color:#d500f9;">NEXA</span>
+                            <img src="./images/graph logo.png" alt="money graph" class="logo"
+                                style="height: 21px; margin: 0 4px;">
+                            <span style="color:#d500f9;">NFT</span>
+                        </a>
+                        <!-- Search -->
+                        <form class="d-flex mx-3 flex-grow-1 searchbar " style="max-width: 250px;">
+                            <div class="input-group">
+                                <span class="input-group-text bg-dark border-secondary text-white">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <input class="form-control bg-dark border-secondary text-white" id="search"
+                                    type="search" placeholder="Search By Anything  " aria-label="Search">
+                            </div>
+                        </form>
+                        <!-- Toggler -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Nav links and buttons -->
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Pages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">NFT Collections</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Products</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex ms-lg-4 gap-2">
+                                <a href="#" class="btn btn-pink text-white px-4"
+                                    style="background: #ff4da6; border-radius: 10px;">Log In</a>
+                                <a href="#" class="btn btn-outline-pink px-4"
+                                    style="border-color: #ff4da6; color: #fff; border-radius: 10px;">Create NFT</a>
+                            </div>
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- header section end -->
+
+    <!-- main section start -->
+    <main>
+        <section class="hero-section py-5" style="background-color: #000000;">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Left: Text and Buttons -->
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold text-white mb-4 main-heading"> Discover rare artworks
+                            by world class artists
+                        </h1>
+                        <p class="lead text-secondary mb-4 main-para" style="max-width: 480px;">
+                            Ethrik, a Global B2B SaaS, empowers you to launch your own white label NFT store or NFT
+                            Marketplace without any technical knowledge.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="btn btn-pink btn-background text-white px-4"
+                                style=" border-radius: 10px;">Place A Bid</a>
+                            <a href="#" class="btn btn-outline-light px-4 py-2 fw-semibold"
+                                style="border-radius: 10px;">View Artwork</a>
+                        </div>
+                    </div>
+                    <!-- Right: Images -->
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 d-flex flex-column gap-3">
+                                <img src="./images/hero-image1.png" class="img-fluid rounded-4" alt="Art 1">
+                                <img src="./images/hero-image2.png" class="img-fluid rounded-4" alt="Art 2">
+                            </div>
+                            <div class="col-6">
+                                <img src="./images/hero-image3.png" class="img-fluid rounded-4 h-100 object-fit-cover"
+                                    alt="Art 3" style="min-height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Latest Atwork Section  -->
+        <section class="latest-artwork-section py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="text-white fw-bold mb-0">Latest Artwork</h2>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-artwork-nav" aria-label="Previous">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="btn btn-artwork-nav" aria-label="Next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="artwork-card">
+                            <img src="./images/artwork1.png" alt="Artwork 1" class="img-fluid rounded-4">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="artwork-card">
+                            <img src="./images/artwork2.png" alt="Artwork 2" class="img-fluid rounded-4">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="artwork-card">
+                            <img src="./images/artwork3.png" alt="Artwork 3" class="img-fluid rounded-4">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="artwork-card">
+                            <img src="./images/artwork4.png" alt="Artwork 4" class="img-fluid rounded-4"
+                                style="background: url('./images/rectbox-artwork4.svg'); background-size: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Live Auction section-->
+        <section class="live-auction-section py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="text-white fw-bold mb-0">Live Auction</h2>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-auction-nav" aria-label="Previous">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="btn btn-auction-nav" aria-label="Next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="auction-card p-3">
+                            <img src="./images/auction1.png" alt="Auction 1" class="img-fluid rounded-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold text-white upper-text">Avril15.eth</span>
+                                <span class="fw-semibold text-success auction-eth upper-text">4.4 ETH</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary small lower-text">14 Hours Left</span>
+                                <a href="#" class="btn btn-bid px-3 py-1    lower-text">Place A Bid</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="auction-card p-3">
+                            <img src="./images/auction2.png" alt="Auction 2" class="img-fluid rounded-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold text-white upper-text">Plur#3518</span>
+                                <span class="fw-semibold text-success auction-eth upper-text">0.1 ETH</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary small lower-text">14 Hours Left</span>
+                                <a href="#" class="btn btn-bid px-3 py-1 lower-text">Place A Bid</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="auction-card p-3">
+                            <img src="./images/auction3.png" alt="Auction 3" class="img-fluid rounded-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold text-white upper-text">BirdX#2378</span>
+                                <span class="fw-semibold text-success auction-eth upper-text">0.4 ETH</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary small lower-text">14 Hours Left</span>
+                                <a href="#" class="btn btn-bid px-3 py-1 lower-text">Place A Bid</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="auction-card p-3">
+                            <img src="./images/auction4.png" alt="Auction 4" class="img-fluid rounded-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold text-white upper-text">ClonX#8970</span>
+                                <span class="fw-semibold text-success auction-eth upper-text">0.2 ETH</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary small lower-text">14 Hours Left</span>
+                                <a href="#" class="btn btn-bid px-3 py-1 lower-text">Place A Bid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Top Collection Section-->
+        <section class="top-collection py-5">
+            <div class="container">
+                <div class="align-items-center mb-4">
+                    <h2 class="text-white fw-bold mb-0">Top Collection</h2>
+
+                </div>
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="collection-card d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./images/collection1.png" alt="Bored Ape Yatch Club"
+                                    class="collection-avatar">
+                                <div class="">
+                                    <div class="fw-semibold text-white ">
+                                        <p> Bored Ape Yatch Club</p>
+                                    </div>
+                                    <div class="text-secondary small mt-2 ">
+                                        <p>Floor Price: 85 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end  collection-lower-text">
+                                <div class="fw-semibold text-white">
+                                    <p>3.4K ETH</p>
+                                </div>
+                                <div class="collection-change up mt-2">
+                                    <p class="up-down">+38.3%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="collection-card d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./images/collection2.png" alt="Goblintown.wtf" class="collection-avatar">
+                                <div>
+                                    <div class="fw-semibold text-white">
+                                        <p>Goblintown.wtf</p>
+                                    </div>
+                                    <div class="text-secondary small mt-2">
+                                        <p>Floor Price: 85 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end collection-lower-text">
+                                <div class="fw-semibold text-white">
+                                    <p>2.1K ETH</p>
+                                </div>
+                                <div class="collection-change up mt-2">
+                                    <p class="up-down">+19.2%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="collection-card d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./images/collection3.png" alt="PROOF Collective" class="collection-avatar">
+                                <div>
+                                    <div class="fw-semibold text-white">
+                                        <p>PROOF Collective</p>
+                                    </div>
+                                    <div class="text-secondary small mt-2">
+                                        <p>Floor Price: 85 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end collection-lower-text">
+                                <div class="fw-semibold text-white">
+                                    <p>7.1K ETH</p>
+                                </div>
+                                <div class="collection-change up mt-2">
+                                    <p class="up-down">+19.4%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="collection-card d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./images/collection4.png" alt="Bored Ape Yatch Club"
+                                    class="collection-avatar">
+                                <div>
+                                    <div class="fw-semibold text-white">
+                                        <p>Bored Ape Yatch Club</p>
+                                    </div>
+                                    <div class="text-secondary small mt-2">
+                                        <p>Floor Price: 85 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end collection-lower-text">
+                                <div class="fw-semibold text-white">
+                                    <p>3.4K ETH</p>
+                                </div>
+                                <div class="collection-change down mt-2">
+                                    <p class="up-down">-9.4%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="collection-card d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./images/collection5.png" alt="Azuki" class="collection-avatar">
+                                <div>
+                                    <div class="fw-semibold text-white">
+                                        <p>Azuki</p>
+                                    </div>
+                                    <div class="text-secondary small mt-2">
+                                        <p>Floor Price: 85 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end collection-lower-text">
+                                <div class="fw-semibold text-white">
+                                    <p>4.1K ETH</p>
+                                </div>
+                                <div class="collection-change down mt-2">
+                                    <p class="up-down">-9.4%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="collection-card d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./images/collection6.png" alt="Doodles" class="collection-avatar">
+                                <div>
+                                    <div class="fw-semibold text-white">
+                                        <p>Doodles</p>
+                                    </div>
+                                    <div class="text-secondary small mt-2">
+                                        <p>Floor Price: 85 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end collection-lower-text">
+                                <div class="fw-semibold text-white">
+                                    <p>9.1K ETH</p>
+                                </div>
+                                <div class="collection-change up mt-2">
+                                    <p class="up-down">+29.6%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="collection-card d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./images/collection7.png" alt="CryptoPunks" class="collection-avatar">
+                                <div>
+                                    <div class="fw-semibold text-white">
+                                        <p>CryptoPunks</p>
+                                    </div>
+                                    <div class="text-secondary small mt-2">
+                                        <p>Floor Price: 85 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end collection-lower-text">
+                                <div class="fw-semibold text-white">
+                                    <p>1.1K ETH</p>
+                                </div>
+                                <div class="collection-change up mt-2">
+                                    <p class="up-down">+22.4%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="collection-card d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./images/collection8.png" alt="Shitbeast" class="collection-avatar">
+                                <div>
+                                    <div class="fw-semibold text-white">
+                                        <p>Shitbeast</p>
+                                    </div>
+                                    <div class="text-secondary small mt-2">
+                                        <p>Floor Price: 85 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end collection-lower-text">
+                                <div class="fw-semibold text-white">
+                                    <p>1.6K ETH</p>
+                                </div>
+                                <div class="collection-change up mt-2">
+                                    <p class="up-down">+33.6%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="collection-card d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./images/collection9.png" alt="Shitbeast" class="collection-avatar">
+                                <div>
+                                    <div class="fw-semibold text-white">
+                                        <p>Shitbeast</p>
+                                    </div>
+                                    <div class="text-secondary small mt-2">
+                                        <p>Floor Price: 85 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-end collection-lower-text">
+                                <div class="fw-semibold text-white">
+                                    <p>1.9K ETH</p>
+                                </div>
+                                <div class="collection-change down mt-2">
+                                    <p class="up-down">-9.4%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!--Discover NFT Section-->
+        <section class="discover-nft py-5">
+            <div class="container">
+                <h2 class="text-white fw-bold mb-4">Discover NFT</h2>
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="nft-card p-3">
+                            <img src="./images/auction1.png" alt="NFT 1" class="img-fluid rounded-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold text-white">Avril15.eth</span>
+                                <span class="fw-semibold text-success auction-eth">4.4 ETH</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary small">14 Hours Left</span>
+                                <a href="#" class="btn btn-bid px-3 py-1">Place A Bid</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="nft-card p-3">
+                            <img src="./images/auction2.png" alt="NFT 2" class="img-fluid rounded-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold text-white">Plur#3518</span>
+                                <span class="fw-semibold text-success auction-eth">0.1 ETH</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary small">14 Hours Left</span>
+                                <a href="#" class="btn btn-bid px-3 py-1">Place A Bid</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="nft-card p-3">
+                            <img src="./images/auction3.png" alt="NFT 3" class="img-fluid rounded-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold text-white">BirdX#2378</span>
+                                <span class="fw-semibold text-success auction-eth">0.4 ETH</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary small">14 Hours Left</span>
+                                <a href="#" class="btn btn-bid px-3 py-1">Place A Bid</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="nft-card p-3">
+                            <img src="./images/auction4.png" alt="NFT 4" class="img-fluid rounded-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold text-white">ClonX#8970</span>
+                                <span class="fw-semibold text-success auction-eth">0.2 ETH</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary small">14 Hours Left</span>
+                                <a href="#" class="btn btn-bid px-3 py-1">Place A Bid</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="nft-card p-3">
+                            <img src="./images/auction5.png" alt="NFT 5" class="img-fluid rounded-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold text-white">Apes15.eth</span>
+                                <span class="fw-semibold text-success auction-eth">4.4 ETH</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary small">14 Hours Left</span>
+                                <a href="#" class="btn btn-bid px-3 py-1">Place A Bid</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="nft-card p-3">
+                            <img src="./images/auction6.png" alt="NFT 6" class="img-fluid rounded-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold text-white">Egao#3518</span>
+                                <span class="fw-semibold text-success auction-eth">0.1 ETH</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary small">14 Hours Left</span>
+                                <a href="#" class="btn btn-bid px-3 py-1">Place A Bid</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="nft-card p-3">
+                            <img src="./images/auction7.png" alt="NFT 7" class="img-fluid rounded-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold text-white">HapeX#2378</span>
+                                <span class="fw-semibold text-success auction-eth">0.4 ETH</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary small">14 Hours Left</span>
+                                <a href="#" class="btn btn-bid px-3 py-1">Place A Bid</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="nft-card p-3">
+                            <img src="./images/auction8.png" alt="NFT 8" class="img-fluid rounded-4 mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold text-white">ClonX#8970</span>
+                                <span class="fw-semibold text-success auction-eth">0.2 ETH</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary small">14 Hours Left</span>
+                                <a href="#" class="btn btn-bid px-3 py-1">Place A Bid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Discover NFT Section end-->
+
+
+        <!-- Popular Categories Section -->
+        <section class="popular-categories-section py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="text-white fw-bold mb-0">Popular Categories</h2>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-artwork-nav" aria-label="Previous">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="btn btn-artwork-nav" aria-label="Next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="category-card text-center p-4">
+                            <img src="./images/category1.png" alt="Metaverse" class="img-fluid rounded-4 mb-3"
+                                style="object-fit: cover;">
+                            <div class="fw-semibold text-white category-title">
+                                <p>Metaverse</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="category-card text-center p-4">
+                            <img src="./images/category2.png" alt="Photography" class="img-fluid rounded-4 mb-3"
+                                style="object-fit: cover;">
+                            <div class="fw-semibold text-white category-title">
+                                <p>Photography</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="category-card text-center p-4">
+                            <img src="./images/category3.png" alt="Digital Art" class="img-fluid rounded-4 mb-3"
+                                style="object-fit: cover;">
+                            <div class="fw-semibold text-white category-title">
+                                <p>Digital Art</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="category-card text-center p-4">
+                            <img src="./images/category4.png" alt="Ethereum" class="img-fluid rounded-4 mb-3"
+                                style="object-fit: cover;">
+                            <div class="fw-semibold text-white category-title">
+                                <p>Ethereum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Create and Sell Your NFTs Section -->
+        <section class="create-sell-nft-section py-5">
+            <div class="container">
+                <h2 class="text-white fw-bold text-center mb-5">Create and Sell Your NFTs</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="sell-card p-4 text-center">
+                            <div class="icon-bg mb-4">
+                                <img src="./images/wallet icon.png" alt="Wallet">
+                            </div>
+                            <div class="fw-semibold text-white mb-2">
+                                <h3>Set Up Your Wallet</h3>
+                            </div>
+                            <div class="text-secondary small">
+                                <p>Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the
+                                    wallet icon in the top right corner. Learn about the wallets we support.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="sell-card p-4 text-center">
+                            <div class="icon-bg mb-4">
+                                <img src="./images/collection icon.png" alt="Collection">
+                            </div>
+                            <div class="fw-semibold text-white mb-2">
+                                <h3>Create Your Collection</h3>
+                            </div>
+                            <div class="text-secondary small">
+                                <p>Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the
+                                    wallet icon in the top right corner. Learn about the wallets we support.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="sell-card p-4 text-center">
+                            <div class="icon-bg mb-4">
+                                <img src="./images/add icon.png" alt="Add NFT">
+                            </div>
+                            <div class="fw-semibold text-white mb-2">
+                                <h3>Add Your NFTs</h3>
+                            </div>
+                            <div class="text-secondary small">
+                                <p>Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the
+                                    wallet icon in the top right corner. Learn about the wallets we support.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="sell-card p-4 text-center">
+                            <div class="icon-bg mb-4">
+                                <img src="./images/dollar icon.png" alt="List For Sale">
+                            </div>
+                            <div class="fw-semibold text-white mb-2">
+                                <h3>List Them For Sale</h3>
+                            </div>
+                            <div class="text-secondary small">
+                                <p>Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the
+                                    wallet icon in the top right corner. Learn about the wallets we support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Latest Articles Section -->
+        <section class="latest-articles-section py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="text-white fw-bold mb-0">Latest Articles</h2>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-artwork-nav" aria-label="Previous">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="btn btn-artwork-nav" aria-label="Next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <!-- Article 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="article-card p-4 h-100 ">
+                            <img src="./images/article1.png" alt="Article 1" class="img-fluid rounded-4 mb-3"
+                                style="object-fit: cover;">
+                            <div class="fw-semibold text-white mb-2">
+                                <p>6 Things You Didn’t Know You Could Do NEXA</p>
+                            </div>
+                            <div class="text-secondary small mb-4">
+                                <p>If You’re reading this , You’ve Probably Listed bought, and sold on NEXA! Crowds are
+                                starting to gather at</p>
+                            </div>
+                            <a href="#" class="learn-more-link">
+                                Learn More <span class="learn-more-icon" ><img src="./images/arrow.png" alt="arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Article 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="article-card p-4 h-100">
+                            <img src="./images/article2.png" alt="Article 2" class="img-fluid rounded-4 mb-3"
+                                style=" object-fit: cover;">
+                            <div class="fw-semibold text-white mb-2">
+                                <p>Announcing Our $100m Raise, Led By AIStudio</p>
+                            </div>
+                            <div class="text-secondary small mb-4">
+                                <p>If You’re reading this , You’ve Probably Listed bought, and sold on NEXA! Crowds are
+                                starting to gather at</p>
+                            </div>
+                            <a href="#" class="learn-more-link">
+                                Learn More <span class="learn-more-icon"><img src="./images/arrow.png" alt="arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Article 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="article-card p-4 h-100">
+                            <img src="./images/article3.png" alt="Article 3" class="img-fluid rounded-4 mb-3"
+                                style="object-fit: cover;">
+                            <div class="fw-semibold text-white mb-2">
+                                <p>The&nbsp; Biggest Drop In Time Square Since New Year</p>
+                            </div>
+                            <div class="text-secondary small mb-4">
+                                <p>If You’re reading this , You’ve Probably Listed bought, and sold on NEXA! Crowds are
+                                starting to gather at</p>
+                            </div>
+                            <a href="#" class="learn-more-link">
+                                Learn More <span class="learn-more-icon"><img src="./images/arrow.png" alt="arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- main section end -->
+
+    <!-- Footer Section -->
+<footer class="footer-section pt-5 pb-2">
+    <div class="container">
+        <div class="row gy-4 align-items-start">
+            <!-- Logo & Description -->
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="footer-logo mb-3 d-flex align-items-center gap-2">
+                    <a class="footer-brand fw-bold " href="#">
+                            <span style="color:#d500f9;">NEXA</span>
+                            <img src="./images/graph logo.png" alt="money graph" class="logo"
+                                style="height: 21px; margin: 0 4px;">
+                            <span style="color:#d500f9;">NFT</span>
+                        </a>
+                </div>
+                <div class="footer-desc text-secondary small">
+                    <p>The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs).
+                    Buy, sell, and discover exclusive digital items.</p>
+                </div>
+            </div>
+            <!-- Marketplaces -->
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="footer-title text-white mb-3">Marketplaces</div>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Create</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Help center</a></li>
+                </ul>
+            </div>
+            <!-- Useful Links -->
+            <div class="col-6 col-md-2 col-lg-2">
+                <div class="footer-title text-white mb-3">Useful Links</div>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All NFTs</a></li>
+                    <li><a href="#">Collectors</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Articles</a></li>
+                </ul>
+            </div>
+            <!-- Newsletter & Social -->
+            <div class="col-12 col-md-4 col-lg-5">
+                <div class="footer-title text-white mb-3">Get the latest NEXA Updates</div>
+                <form class="footer-newsletter d-flex mb-3" style="max-width:320px;">
+                    <input type="email" class="form-control me-2" placeholder="Your Email" style="background:#232329; border:none; color:#fff;">
+                    <button type="submit" class="btn btn-gradient px-4">SEND</button>
+                </form>
+                <div class="mb-2 text-white">Join NEXA Community</div>
+                <div class="footer-social d-flex gap-3">
+                    <a href="#" class="footer-social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-divider my-4" style="border-color:#232329;">
+        <div class="text-center text-secondary small pb-2">
+            Copyright © NEXA 2025. All Right Reserved
+        </div>
+    </div>
+</footer>
+ <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+    <!-- popper js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+        integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- custom js -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
